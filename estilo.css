@@ -1,0 +1,155 @@
+/* Fuentes y reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e0e3e7, #f2f4f8); /* Fondo gris claro */
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.container {
+  background: #ffffff;
+  max-width: 860px; /* Más ancho */
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+}
+
+h1 {
+  text-align: center;
+  color: #2f3e63; /* Azul oscuro neutro */
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #a4b0c0;
+  border-radius: 50px;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: #516c9c;
+  box-shadow: 0 0 8px #516c9c66;
+}
+
+button {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  background: #516c9c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #3b507a;
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7486a2;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+#status {
+  text-align: center;
+  color: #2f3e63;
+  font-weight: 600;
+  margin-bottom: 15px;
+  min-height: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 450px;
+  overflow-y: auto;
+  border-top: 2px solid #d0d8e4;
+  border-radius: 0 0 15px 15px;
+}
+
+li {
+  background: #f6f8fa;
+  padding: 18px 25px;
+  border-left: 6px solid #516c9c;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e6ebf1;
+}
+
+li strong {
+  font-size: 1.2rem;
+  color: #2f3e63;
+}
+
+a {
+  color: #3b507a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1d2946;
+  text-decoration: underline;
+}
+
+small {
+  font-weight: 400;
+  color: #6c7b94;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2f3e63;
+  color: #fff;
+  padding: 18px 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}

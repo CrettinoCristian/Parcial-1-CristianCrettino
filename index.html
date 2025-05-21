@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Universidades por País</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>🌍 Buscador Universitario Mundial</h2>
+  </header>
+
+  <main class="container">
+    <h1>Universidades por país</h1>
+
+    <form id="formularioBusqueda">
+      <input type="text" id="entradaPais" placeholder="Escribí un país, ej: Mexico" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <small style="display:block; text-align:center; margin-bottom:1em; color:#555;">
+      El país debe ingresarse en inglés (ej: <i>Spain</i>, <i>Germany</i>).
+    </small>
+
+    <div id="mensajeEstado"></div>
+    <ul id="listaResultados"></ul>
+  </main>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
