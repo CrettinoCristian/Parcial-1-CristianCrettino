@@ -19,7 +19,7 @@ formulario.addEventListener('submit', async (evento) => {
     const datos = await respuesta.json();
 
     if (datos.length === 0) {
-      mensajeEstado.textContent = 'Error al obtener los datos. Verifica tu conexion o que hayas escrito el pais correctamente.';
+      mensajeEstado.textContent = 'No se encontraron universidades.';
       return;
     }
 
